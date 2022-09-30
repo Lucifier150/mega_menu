@@ -1,4 +1,70 @@
+@font-face{
+    font-family: gorditalight;
+    src:url(fonts/Gordita\ Light.otf)
+}
+a{
+    text-decoration: none;
+    font-family: gorditalight;
+    color: #727272;
+    
+
+}
 .wrapper{
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 0rem;
+}
+.horzontalnavigation_list-item{
+    text-decoration: none;
+    list-style: none;
+    font-family: gorditalight;
+    font-weight: bolder;
+    font-size: 15px;
+
+    
+}
+.horizontalnavigation_list{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* gap: 1rem; */
+    margin: 0;
+    padding: 0;
+}
+.siteheader_nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+}
+.horizontalnavigation{
+    padding: 0 0 0 32px;
+}
+.navigation_dropdown{
+    padding: 0 13px;
+    margin: 0;
+    background: none;
+    border-radius: 0;
+    border: 0;
+    color: #727272;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 56px;
+}
+.ri-arrow-drop-down-line:before {
+    font-size: 17px;
+}
+.siteheader_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.siteheader_contact{
+    display: flex;
+    gap: 1rem;
 }
