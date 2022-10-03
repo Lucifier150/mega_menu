@@ -1,29 +1,44 @@
-@font-face{
-    font-family: gorditalight;
-    src:url(fonts/Gordita\ Light.otf)
-}
-a{
-    text-decoration: none;
-    font-family: gorditalight;
-    color: #727272;
-    
+* {
+    font-family: gorditareg;
 
 }
-.wrapper{
+
+@font-face {
+    font-family: gorditalight;
+    src: url(fonts/Gordita\ Light.otf)
+}
+
+@font-face {
+    font-family: gorditareg;
+    src: url(fonts/Gordita\ Medium.otf);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    /* font-family: gorditalight; */
+    color: #727272;
+}
+
+.wrapper {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 0rem;
 }
-.horzontalnavigation_list-item{
+
+.horzontalnavigation_list-item {
     text-decoration: none;
     list-style: none;
     font-family: gorditalight;
-    font-weight: bolder;
     font-size: 15px;
-
-    
+    position: relative;
 }
-.horizontalnavigation_list{
+
+.horizontalnavigation_list {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -32,17 +47,20 @@ a{
     margin: 0;
     padding: 0;
 }
-.siteheader_nav{
+
+.siteheader_nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     height: 100%;
 }
-.horizontalnavigation{
+
+.horizontalnavigation {
     padding: 0 0 0 32px;
 }
-.navigation_dropdown{
+
+.navigation_dropdown {
     padding: 0 13px;
     margin: 0;
     background: none;
@@ -56,15 +74,80 @@ a{
     font-size: 14px;
     line-height: 56px;
 }
+
 .ri-arrow-drop-down-line:before {
     font-size: 17px;
 }
-.siteheader_wrapper{
+
+.siteheader_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.siteheader_contact{
+
+.siteheader_contact {
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+.button_css-0 {
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Contact_Sales {
+    border-left: solid 1px grey;
+    padding-left: 1rem;
+}
+
+.navigation_dropdown-active a {
+    color: black;
+}
+
+.navigation_dropdown-active {
+    display: none;
+    color: #fff;
+    left: 0;
+    position:absolute;
+    text-align: left;
+    width: 100%;
+}
+
+.horzontalnavigation_list-item:hover .navigation_dropdown-active {
+    display: block;
+    position: absolute;
+    background-color: red;
+    margin-top: -1rem;
+    width: 100vh;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+.sub-dropdown h6{
+    border-bottom: solid 1px rgb(150, 150, 150);
+    padding-bottom: 1rem;
+    font-size: 12px;
+    /* padding-top: 1rem; */
+}
+.navigation_dropdown-active ul li:nth-child(2){
+    padding-top: 1rem;
+
+}
+.sub-dropdown{
+    display: flex;
+    flex-direction: column; 
+}
+.semi-col{
+    display: flex;
+}
+.navigation_dropdown-active p{
+    font-size: 10px;
+    color: #cacaca;
+    padding-right: 1rem;
+    text-align: center;
 }
